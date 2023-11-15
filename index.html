@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+</head>
+
+<body>
+    <div id="display-content">
+        <h1>Usuario</h1>
+        <img src="assets/profile.png" alt="user-icon">
+        <span>Nombre: </span><b id="name">Nombre uno</b>
+        <hr>
+        <span>Mail: </span><b id="mail">nombre@ejemplo.com</b>
+        <hr>
+        <span>Intereses: </span><b id="interest">Messi</b>
+        <hr>
+        <button onclick="handleEditProfile()">Editar Perfil</button>
+    </div>
+    <div id="edit-content">
+        <h1>Usuario</h1>
+        <img src="assets/profile.png" alt="user-icon">
+        <span>Nombre: </span>
+        <input type="text" id="input-name" placeholder="Ejemplo de nombre" />
+        <hr>
+        <span>Mail: </span>
+        <input type="text" id="input-mail" placeholder="nombre@ejemplo.com" />
+        <hr>
+        <span>Intereses: </span>
+        <input type="text" id="input-interest" placeholder="Messi" />
+        <hr>
+        <button onclick="handleUpdateProfile()">Guardar Perfil</button>
+    </div>
+</body>
+
+</html>
